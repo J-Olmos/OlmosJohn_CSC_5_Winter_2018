@@ -53,7 +53,7 @@ int main(int argc, char** argv) {
             case 10: problem10();break;
             default:   def(inN);
 	}
-    }while(inN<=10);
+    }while(inN>=1&&inN<=10);
 
     //Exit Stage Right Here!
     return 0;
@@ -61,16 +61,16 @@ int main(int argc, char** argv) {
 
 void Menu(){
     cout<<endl
-        <<"Type  1 for: Gaddis_8thEd_Prob\n"
-        <<"Type  2 for: Gaddis_8thEd_Prob\n"
-        <<"Type  3 for: Gaddis_8thEd_Prob\n"
-        <<"Type  4 for: Gaddis_8thEd_Prob\n"
-        <<"Type  5 for: Gaddis_8thEd_Prob\n"
-        <<"Type  6 for: Gaddis_8thEd_Prob\n"
-        <<"Type  7 for: Gaddis_8thEd_Prob\n"
-        <<"Type  8 for: Gaddis_8thEd_Prob\n"
-        <<"Type  9 for: Gaddis_8thEd_Prob\n"
-        <<"Type 10 for: Gaddis_8thEd_Prob\n"
+        <<"Type  1 for: Gaddis 8thEd Prob01 - Sum of Numbers\n"
+        <<"Type  2 for: Gaddis 8thEd Prob03 - Ocean Levels\n"
+        <<"Type  3 for: Gaddis 8thEd Prob\n"
+        <<"Type  4 for: Gaddis 8thEd Prob\n"
+        <<"Type  5 for: Gaddis 8thEd Prob\n"
+        <<"Type  6 for: Gaddis 8thEd Prob\n"
+        <<"Type  7 for: Gaddis 8thEd Prob\n"
+        <<"Type  8 for: Gaddis 8thEd Prob\n"
+        <<"Type  9 for: Gaddis 8thEd Prob\n"
+        <<"Type 10 for: Gaddis 8thEd Prob\n"
         <<"Or type anything else to exit.\n"
         <<"\nProblem: ";
 }
@@ -104,7 +104,23 @@ void problem1(){
 }
 
 void problem2(){
+    //Declare/Initialize Variables 
+    int year=25;
+    float rise=0;
     
+    //Output Header 
+    cout<<"This table displays the number of millimeters the\n"
+        <<"ocean will have risen each year for the next 25 years.\n\n"
+        <<"Year   Increase\n"
+        <<"---------------\n";
+    
+    //Output table
+    for(int i=1;i<=year;i++){
+        rise+=1.5f;
+        cout<<setw(3)<<i
+            <<fixed<<setprecision(1)
+            <<setw(9)<<rise<<"mm\n";
+        }
 }
 
 void problem3(){

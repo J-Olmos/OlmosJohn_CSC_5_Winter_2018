@@ -19,25 +19,30 @@ using namespace std;
 
 //Execution Begins Here
 int main(int argc, char** argv) {
-    //Declare Variables 
-    int year=25;
-    float rise=0;
+    //Declare Variables
+    int n,max,min;
     
     //Initialize Variables
-    cout<<"This table displays the number of millimeters the\n"
-        <<"ocean will have risen each year for the next 25 years.\n\n"
-        <<"Year   Increase\n"
-        <<"---------------\n";
+    max=min=0;
+    
+    //Output Header
+    cout<<"This program finds the largest and\n"
+        <<"smallest out of the integers entered.\n\n";
     
     //Process/Map inputs to outputs
-    for(int i=1;i<=year;i++){
-        rise+=1.5f;
-        cout<<setw(3)<<i
-            <<fixed<<setprecision(1)
-            <<setw(9)<<rise<<"mm\n";
-        }
-    
+    cout<<"Enter a series of integers\n"
+          "Type -99 to end the series: ";
+    while(n!=-99){
+        if(n>max){max=n;}
+        if(n<min){min=n;}
+        cin>>n;
+        if(max==0){max=n;}
+        if(min==0){min=n;}
+    };
+        
     //Output data
+    cout<<"Largest number : "<<max<<endl
+        <<"Smallest number: "<<min<<endl;    
     
     //Exit stage right!
     return 0;

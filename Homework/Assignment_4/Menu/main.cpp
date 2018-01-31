@@ -60,16 +60,16 @@ int main(int argc, char** argv) {
 
 void Menu(){
     cout<<endl
-        <<"Type  1 for: Gaddis 8thEd Prob01 - Sum of Numbers\n"
-        <<"Type  2 for: Gaddis 8thEd Prob03 - Ocean Levels\n"
-        <<"Type  3 for: Gaddis 8thEd Prob04 - Calories Burned\n"
-        <<"Type  4 for: Gaddis 8thEd Prob05 - Membership Fees\n"
-        <<"Type  5 for: Gaddis 8thEd Prob06 - Distance Traveled\n"
-        <<"Type  6 for: Gaddis 8thEd Prob07 - Pennies for Pay\n"
-        <<"Type  7 for: Gaddis 8thEd Prob09 - Hotel Occupancy\n"
-        <<"Type  8 for: Gaddis 8thEd Prob10 - Average Rainfall\n"
-        <<"Type  9 for: Gaddis 8thEd Prob12 - Celsius to Fahrenheit\n"
-        <<"Type 10 for: Gaddis 8thEd Prob13 - Greatest and Least\n"
+        <<"Type  1 for: Gaddis 8thEd Chap5 Prob01 - Sum of Numbers\n"
+        <<"Type  2 for: Gaddis 8thEd Chap5 Prob03 - Ocean Levels\n"
+        <<"Type  3 for: Gaddis 8thEd Chap5 Prob04 - Calories Burned\n"
+        <<"Type  4 for: Gaddis 8thEd Chap5 Prob05 - Membership Fees\n"
+        <<"Type  5 for: Gaddis 8thEd Chap5 Prob06 - Distance Traveled\n"
+        <<"Type  6 for: Gaddis 8thEd Chap5 Prob07 - Pennies for Pay\n"
+        <<"Type  7 for: Gaddis 8thEd Chap5 Prob09 - Hotel Occupancy\n"
+        <<"Type  8 for: Gaddis 8thEd Chap5 Prob10 - Average Rainfall\n"
+        <<"Type  9 for: Gaddis 8thEd Chap5 Prob12 - Celsius to Fahrenheit\n"
+        <<"Type 10 for: Gaddis 8thEd Chap5 Prob13 - Greatest and Least\n"
         <<"Or type anything else to exit.\n"
         <<"\nProblem: ";
 }
@@ -83,6 +83,7 @@ void problem1(){
     int n,sum;    
     
     //Initialize Variables
+    sum=0;
     cout<<"Enter a positive integer: ";
     cin>>n;
     
@@ -93,7 +94,6 @@ void problem1(){
     }
     
     //Process/Map inputs to outputs
-    sum=0;
     for(int i=1;i<=n;i++){
         sum+=i;
     }

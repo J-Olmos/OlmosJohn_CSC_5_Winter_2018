@@ -1,0 +1,87 @@
+/* 
+ * File:   main.cpp
+ * Author: John Olmos
+ * Created on Jan 30, 2018, 12:06 AM
+ * Purpose: Simple Battleship
+ */
+
+//System Libraries Here
+//Input - Output Library
+//Srand to set the seed
+//File I/O
+//Format the output
+//Strings
+//Time library
+//Math functions
+
+//User Libraries Here
+
+//Global Constants
+//Such as PI, Vc, -> Math/Science values
+//as well as conversions from system of units to another
+//Percentage Conversion
+
+//Function Prototypes Here
+
+//Program Execution Begins Here
+    //Set the random number seed
+    
+    //Instantiate and Open files
+    
+    //Declare Variables
+    //I/O Files
+    //Computer battleship location
+    //User battleship location
+    //Offensive Board
+    //Defensive board
+    //Constant for 100
+    //User hit counter
+    //round counter
+    //Computer pick
+    //User pick
+
+    //Input or initialize values Here
+    //Open I/O files
+    //Last value in file becomes rounds
+    //Clear offensive ship
+    //Mask offensive board
+    //Reset hit counters
+    
+    //Output instructions
+    //Set confirmation to 'n'
+    //Loop until ship is set and confirmed
+	//Clear defensive ship & board
+	//Output directions
+	//Input ship location & validate
+	//Set user battleship location
+	    //Output Defensive Board
+	    //Confirm		   
+	
+    //Generate and battleship location & place
+
+    //Output Game start
+          
+    //Play the game by -> Looping until user or computer has 4 hits
+    //Start time
+        //Computer turn -> Loop if tile has been picked before
+            //Generate Computer pick
+	    //Computer pick result
+		//For hits: change tile to X and increment computer hit
+		//For misses: change tile to O
+	//User turn
+	    //Input user pick
+	    //validate input
+		//User pick result
+		    //For hits: change tile to X and increment computer hit
+		    //For misses: change tile to O
+		//Output both picks
+		//Output Defensive Header & Board
+		//Output Offise Header & Board
+		//Output divider and then increment round
+    //Stop time
+
+    //Output all the statistics to the screen    
+
+    //Output all the statistics to a file
+    
+    //Close files and Exit stage right!

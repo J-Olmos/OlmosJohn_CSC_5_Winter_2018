@@ -68,7 +68,7 @@ int main(int argc, char** argv) {
         cin>>uB;//Input ship location
         
         //Input validation
-        if(uB<48||uB>55){
+        if(uB<49||uB>55){
             cout<<"\nInvalid input, please try again.\n";
         }
         
@@ -126,7 +126,7 @@ int main(int argc, char** argv) {
         //Computer's turn
         do{
             //Computer Pick
-            cPick=rand()%10+1;
+            cPick=rand()%10+1;//[1,10]
 
             //Computer Pick result
             switch(cPick){

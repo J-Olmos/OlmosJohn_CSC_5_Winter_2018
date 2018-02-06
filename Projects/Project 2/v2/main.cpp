@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: Dr Mark E. Lehr
- * Created on February 1st, 2018, 10:50 AM
- * Purpose:  Timing 1,2,3 functions
+ * Created on February 6th, 2018, 12:33 AM
+ * Purpose:  Mini Battleship
  */
 
 //System Libraries
@@ -11,8 +11,8 @@
 #include <ctime>     //Time Library
 #include <cmath>     //Math Library
 #include <iomanip>   //Format Library
-#include <string>
-#include <fstream>
+#include <string>    //Strings
+#include <fstream>   //File I/O
 using namespace std;
 
 //User Libraries

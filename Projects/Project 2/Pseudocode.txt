@@ -1,0 +1,218 @@
+/* 
+ * File:   main.cpp
+ * Author: John Olmos
+ * Created on February 7th, 2018, 2:00 PM
+ * Purpose:  Mini Battleship
+ */
+
+//System Libraries
+
+//User Libraries
+
+//Global Constants
+
+//Function Prototypes
+
+//Begin Main
+    //Set the random number seed
+    
+    //Declare/Initialize Variables
+    
+    //Initialize strings & counters
+    
+    //Clear & Set Boards
+    //Defensive Board
+    //Offensive Board
+    
+    //Display Intro
+    
+    //Place computer ships
+    
+    //Display Defensive Board
+    
+    //Place user ships
+    
+    //Display Game Start
+    
+    //Start Game Timer
+    
+    //Begin and loop rounds until the
+    //user or computer hit all targets
+        //User turn
+	//Increment hits if ship was hit
+
+        //Computer turn
+        //Increment hits if ship was hit
+
+        //Output round choices
+        //Display Defensive board
+        //Display Offensive board
+        
+        //Increment rounds
+    
+    //Stop Game Timer
+    
+    //Display Game statistics
+
+    //Update the record file before ending if 
+    //user wins, otherwise end immediately.
+        //Open file, read into array, update & sort
+        //Write new array to file
+        //Exit Function 
+    
+        //Exit Function
+
+//Begin Display intro
+    //Output text
+
+//Begin Set Defensive Board
+    //Clear board markers and ship locations to 0
+
+//Begin Set Offensive Board
+    //Set board markers to "?" and ship locations to 0
+	
+//Begin Computer placement
+    //Open the file
+    //Read ship placement data into array
+    //Close the file
+
+//Begin User placement
+    //Declare & Initialize variables
+    
+    //Battleship Location
+    //Loop until location is valid
+	//Loop until inputs are valid
+	    //Prompt user for input
+    	    //Validate Input
+        //Validate Placement
+    //Place Battleship on Defensive Board
+    //Display Defensive Board    
+    
+    //Submarine Location
+    //Reset validation
+    //Loop until location is valid
+	//Loop until inputs are valid
+	    //Prompt user for input
+    	    //Validate Input
+        //Validate Placement 
+    //Place Submarine on Defensive Board
+    //Display Defensive Board
+    
+    //Destroyer Location
+    //Reset validation
+    //Loop until location is valid
+	//Loop until inputs are valid
+	    //Prompt user for input
+    	    //Validate Input
+        //Validate Placement 
+    //Place Submarine on Defensive Board
+    //Display Defensive Board
+
+//Begin Validate Battleship location
+    //Declare & Initialize checks
+    //Validate ship placement on the board
+    //Check Vertical placements
+    //Check Horizontal placements
+    //Return True if ship fits, else return False
+
+//Begin Validate Submarine location
+    //Declare & Initialize checks
+    //Validate ship placement on the board
+    //Check Vertical placements
+    //Check Horizontal placements
+    //Return True if ship fits, else return False
+
+//Begin Validate Submarine location
+    //Declare & Initialize checks
+    //Validate ship placement on the board
+    //Check Vertical placements
+    //Check Horizontal placements
+    //Return True if ship fits, else return False
+
+//Begin Validate ship placement
+    //Declare & Initialize variables
+    //Clear test board
+    //Place ship on test board
+    //Search for matching elements between the test and active boards.
+    //If the search finds an equal element then ships would overlap.
+    	//Check Vertical placements
+	    //Display error/return false if occupied
+	//Check Horizontal placements
+   	    //Display error/return false if occupied
+
+//Begin Set Ship
+    //Declare & Initialize
+    //Change Board to place ship
+    	//Vertical placements
+        //Horizontal placements
+
+//Begin Display Start
+    //Output text
+
+//Begin User Turn
+    //Declare & Initialize
+    //User Pick, loop until input is valid
+        //Display error if invalid
+    //Output choice
+    //Convert string to char
+    //Update offensive board
+    //If choice hit
+        //Change element to "X"
+        //Return true
+    //If choice missed
+        //Change element to "O"
+        //Return false
+
+//Begin Computer Turn
+    //Declare & Initialize
+    
+    //Multiple choices are generated to improve enemy odds.
+    //Choice loops until it hits one of the user's ships or once
+    //four attempts have been made (Note: If the final choice
+    //matches that of a previous round the counter is reset).
+    
+    //Only display the final choice
+    //Update defensive board
+    //If choice hit
+        //Change element to "X"
+        //Return true
+    //If choice missed
+        //Change element to "O"
+        //Return false
+
+//Begin Display Board
+    //Display Header
+    //Display Grid
+
+//Begin Display Game Results
+    //Display win/loss/tie and statistics
+
+//Begin Score
+    //Open the file
+    //Read and copy the data from the file into array
+    //Selection sort array
+    //Add game score to end of array
+    //Bubble sort new array
+    //Close the file
+
+//Begin Write
+    //Open the file for writing    
+    //Output new score array to file
+    //Close the file
+
+//Begin Selection sort
+    //Declare variables
+    //Selection sort
+
+//Begin Bubble sort 
+    //Declare Variables
+    //Bubble Sort 
+
+//Begin calc
+    //Calculate %
+
+//Begin calc
+    //Subtract
+
+//Begin exit function
+    //Exit function with defaulted argument

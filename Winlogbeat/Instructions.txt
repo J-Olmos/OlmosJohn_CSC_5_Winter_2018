@@ -1,0 +1,30 @@
+﻿==== Endpoint Installation ====
+Step 1
+	- Open command prompt as admin & type:
+		powershell -executionpolicy bypass
+
+Step 2 (optional)
+#Installing sysmon
+	- CD to Winlogbeat\Sysmon\ folder & type:
+		.\install-service-sysmon.ps1
+
+Step 3		
+#Installing winlogbeat
+#NOTE:	Default installation will load "Hunt" profile for last 72 hours of logs
+#		To load baseline configuration change the following in the installation script:
+#		$workdir\winlogbeat.yml to $workdir\winlogbeat.baseline.yml
+#       See winlogbeat.reference for additional configuration info
+	- Open winlogbeat.yml file and verify Logstash Output hosts: ["ip:port"]
+	- CD to Winlogbeat\Winlogbeat\ folder & type:
+		.\install-service-winlogbeat.ps1
+	- Use "winlogbeat test output" to validate settings once installed
+		
+Step 4
+#Check Kibana for logs
+	- Create a “winlogbeat-*” index pattern if one does not already exist
+		
+==== To Uninstall ====
+Sysmon | type:
+	sysmon -u
+Winlogbeat | cd to winlogbeat folder & type:
+	.\uninstall-service-winlogbeat.ps1
